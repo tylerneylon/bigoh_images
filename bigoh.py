@@ -4,6 +4,7 @@
 #
 
 import cairo
+import random
 
 ######################################################################
 # Globals
@@ -55,6 +56,23 @@ def mergesorted(arr):
     if i == len(left): sorted += right[j:]
     if j == len(right): sorted += left[i:]
   return sorted
+
+def randomized_quicksorted(arr):
+  global numCompares
+  n = len(arr)
+  if n < 2: return arr
+
+  # Set up arr[0] as a random pivot.
+  pivotIndex = random.randint(0, n - 1)
+  arr[0], arr[pivotIndex] = arr[pivotIndex], arr[0]  # Item swap.
+
+  # Find left & right lists so left < pivot <= right.
+  pivot, left, right = arr[0], [], []
+  for item in arr[1:n]:
+    numCompares += 1
+    if item < pivot: left.append(item)
+    else: right.append(item)
+  return quicksorted(left) + [pivot] + quicksorted(right)
 
 def calcNumCompares(arr, fn):
   global numCompares
