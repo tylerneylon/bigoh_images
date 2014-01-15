@@ -1,3 +1,5 @@
+#!/usr/bin/python
+#
 # antisort.py
 #
 # Test that the antisorting function achieves the
@@ -39,7 +41,7 @@ def mergesort_explicit_t_n(n):
 def mergesort_on_antisorted(n):
   arr = range(1, n + 1)
   arr = antisorted(arr)
-  return bigoh.calcNumCompares(arr, bigoh.mergesorted)
+  return bigoh.calc_num_compares(arr, bigoh.mergesorted)
 
 
 for n in range(1, 20):

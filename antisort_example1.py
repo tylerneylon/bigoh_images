@@ -7,43 +7,43 @@ import bigoh
 
 bigoh.width = 513
 bigoh.height = 110
-ctx, surface = bigoh.makeCairoContext()
+ctx, surface = bigoh.make_cairo_context()
 
 # Define colors and dimensions.
 maroon = (0.52, 0.14, 0.23)
 orange = (0.90, 0.45, 0.21)
-numBars = 9
-options = {'barMarginPerc': 0.0}
-barWidth = 17
-box = {'top': 10, 'left': 10, 'width': barWidth * numBars, 'height': 90}
+num_bars = 9
+options = {'bar_margin_perc': 0.0}
+bar_width = 17
+box = {'top': 10, 'left': 10, 'width': bar_width * num_bars, 'height': 90}
 
 
 # Functions.
-def alternatingColors(numBars):
+def alternating_colors(num_bars):
   global maroon, orange
-  return [orange if i % 2 else maroon for i in range(numBars)]
+  return [orange if i % 2 else maroon for i in range(num_bars)]
 
 
 # Main.
 
 # Draw the sorted graph with alternating colors.
-barHeights = range(1, numBars + 1)
-barColors = alternatingColors(numBars)
-bigoh.drawBarGraph(barHeights, numBars, ctx, box, barColors, **options)
+bar_heights = range(1, num_bars + 1)
+bar_colors = alternating_colors(num_bars)
+bigoh.draw_bar_graph(bar_heights, num_bars, ctx, box, bar_colors, **options)
 
 # Draw left in orange with heights 2, 4, etc.
-barHeights = range(2, numBars + 1, 2)
-barColors = [orange for i in barHeights]
+bar_heights = range(2, num_bars + 1, 2)
+bar_colors = [orange for i in bar_heights]
 box['left'] = 350
-box['width'] = barWidth * len(barHeights)
-bigoh.drawBarGraph(barHeights, numBars, ctx, box, barColors, **options)
+box['width'] = bar_width * len(bar_heights)
+bigoh.draw_bar_graph(bar_heights, num_bars, ctx, box, bar_colors, **options)
 
 # Draw right in maroon with heights 1, 3, etc.
-barHeights = range(1, numBars + 1, 2)
-barColors = [maroon for i in barHeights]
+bar_heights = range(1, num_bars + 1, 2)
+bar_colors = [maroon for i in bar_heights]
 box['left'] += box['width']
-box['width'] = barWidth * len(barHeights)
-bigoh.drawBarGraph(barHeights, numBars, ctx, box, barColors, **options)
+box['width'] = bar_width * len(bar_heights)
+bigoh.draw_bar_graph(bar_heights, num_bars, ctx, box, bar_colors, **options)
 
 
 surface.write_to_png('antisort_example1.png')

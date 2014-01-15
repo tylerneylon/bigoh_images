@@ -7,7 +7,7 @@
 import bigoh
 
 # Functions.
-def drawBottomBorder(ctx, box):
+def draw_bottom_border(ctx, box):
   ctx.set_source_rgb(0, 0, 0)
   y = box['top'] + box['height']
   ctx.move_to(box['left'], y)
@@ -16,24 +16,24 @@ def drawBottomBorder(ctx, box):
 
 bigoh.width = 200
 bigoh.height = 450
-ctx, surface = bigoh.makeCairoContext()
+ctx, surface = bigoh.make_cairo_context()
 
 # Define colors and dimensions.
 maroon = (0.52, 0.14, 0.23)
 orange = (0.90, 0.45, 0.21)
 gray = (0.80, 0.80, 0.80)
-vertMargin = 50
-widthDelta = 10
-options = {'barMarginPerc': 0.6, 'forcedBarWidth': 10}
-box = {'top': 10, 'left': 10 + widthDelta * 1.5, 'width': 80, 'height': 70}
+vert_margin = 50
+width_delta = 10
+options = {'bar_margin_perc': 0.6, 'forced_bar_width': 10}
+box = {'top': 10, 'left': 10 + width_delta * 1.5, 'width': 80, 'height': 70}
 
-barColors = [
+bar_colors = [
     [orange, maroon, maroon, maroon, maroon, maroon],
     [gray, None, orange, maroon, maroon, maroon, maroon],
     [gray, None, gray, None, orange, maroon, maroon, maroon],
     [gray, None, gray, None, gray, None, orange, maroon, maroon]
 ]
-barHeights = [
+bar_heights = [
     [1, 2, 3, 4, 5, 6],
     [1, None, 2, 3, 4, 5, 6],
     [1, None, 2, None, 3, 4, 5, 6],
@@ -41,11 +41,11 @@ barHeights = [
 ]
 
 for i in range(4):
-  bigoh.drawBarGraph(barHeights[i], 6, ctx, box, barColors[i], **options)
-  drawBottomBorder(ctx, box)
-  box['top'] += (box['height'] + vertMargin)
-  box['left'] -= (widthDelta / 2)
-  box['width'] += widthDelta
+  bigoh.draw_bar_graph(bar_heights[i], 6, ctx, box, bar_colors[i], **options)
+  draw_bottom_border(ctx, box)
+  box['top'] += (box['height'] + vert_margin)
+  box['left'] -= (width_delta / 2)
+  box['width'] += width_delta
 
 surface.write_to_png('quicksort_example3.png')
 

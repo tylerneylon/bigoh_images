@@ -15,11 +15,11 @@ test_arrays = [
 
 for arr in test_arrays:
   num_compares = 0
-  print('\nTesting input %s' % `arr`)
+  print('\n_testing input %s' % `arr`)
   result = bigoh.randomized_quicksorted(arr)
   print('output=%s' % `result`)
   for i in range(num_trials):
-    num_compares += bigoh.calcNumCompares(arr, bigoh.randomized_quicksorted)
+    num_compares += bigoh.calc_num_compares(arr, bigoh.randomized_quicksorted)
   avg_num_compares = num_compares / float(num_trials)
   print('after %d trials, avg #comparisons=%.1f' % (num_trials, avg_num_compares))
 
