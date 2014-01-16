@@ -24,5 +24,5 @@ for n in range(3, 8):  # Real image should go up to 10 (so end=11).
   #bigoh.draw_bar_graph(n, ctx, bigoh.centered_rect(top=10 + (n - 3) * 100, height=100, horiz_inset=10))
   box = bigoh.centered_rect(top=10 + (n - 3) * 100, height=100, horiz_inset=10)
   bigoh.draw_time_graph(n, ctx, box, draw_perms=False, sort_times=True)
-surface.write_to_png('img2.png')
+surface.write_to_png('quick_vs_merge2.png')
 

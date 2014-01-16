@@ -25,5 +25,5 @@ first_height = 150
 bigoh.draw_time_graph(3, ctx, bigoh.centered_rect(top=10, height=first_height, horiz_inset=10))
 bigoh.draw_time_graph(4, ctx, bigoh.centered_rect(top=(first_height + 40), height=80, horiz_inset=10))
 
-surface.write_to_png('img1.png')
+surface.write_to_png('quick_vs_merge1.png')
 
