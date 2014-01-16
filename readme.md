@@ -19,3 +19,27 @@ draws each one.
 *antisort_example2.py*
 
 ![antisort_exampl2.png](https://raw.github.com/tylerneylon/bigoh_images/master/img/antisort_example2.png)
+
+*antisort_example3.py*
+
+![antisort_exampl3.png](https://raw.github.com/tylerneylon/bigoh_images/master/img/antisort_example3.png)
+
+*bigoh_img1.py*
+
+![quick_vs_merge1.png](https://raw.github.com/tylerneylon/bigoh_images/master/img/quick_vs_merge1.png)
+
+*bigoh_img2.py*
+
+![quick_vs_merge2.png](https://raw.github.com/tylerneylon/bigoh_images/master/img/quick_vs_merge2.png)
+
+*quicksort_example1.py*
+
+![quicksort_example1.png](https://raw.github.com/tylerneylon/bigoh_images/master/img/quicksort_example1.png)
+
+*quicksort_example2.py*
+
+![quicksort_example2.png](https://raw.github.com/tylerneylon/bigoh_images/master/img/quicksort_example2.png)
+
+*quicksort_example3.py*
+
+![quicksort_example3.png](https://raw.github.com/tylerneylon/bigoh_images/master/img/quicksort_example3.png)
