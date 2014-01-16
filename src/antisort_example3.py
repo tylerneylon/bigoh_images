@@ -1,3 +1,5 @@
+#!/usr/bin/python
+#
 # antisort_example3.py
 #
 # Draw a data flow diagram of a mergesort on an

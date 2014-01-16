@@ -1,3 +1,5 @@
+#!/usr/bin/python
+#
 # antisort_example1.py
 #
 # Draw graphs to illustrate the antisort function.

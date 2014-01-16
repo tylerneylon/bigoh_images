@@ -1,3 +1,5 @@
+#!/usr/bin/python
+#
 # bigoh.py
 #
 # Sort-measuring and bar-graph-drawing functions.

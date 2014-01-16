@@ -1,3 +1,5 @@
+#!/usr/bin/python
+#
 # quicksort_example3.py
 #
 # Graphs illustrating how quicksort operates
