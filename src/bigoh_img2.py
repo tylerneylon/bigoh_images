@@ -18,7 +18,6 @@ bigoh.line_width = 1.0
 
 
 ctx, surface = bigoh.make_cairo_context()
-# TEMP TODO The end of the range should be 11. I'm using 8 for faster testing.
 for n in range(3, 8):  # Real image should go up to 10 (so end=11).
   #print('n=%d' % n)
   #bar_heights, perms = bigoh.get_runtimes_for_sorting(n)
