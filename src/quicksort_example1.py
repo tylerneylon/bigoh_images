@@ -16,6 +16,8 @@ def draw_bottom_border(ctx, box):
   ctx.line_to(box['left'] + box['width'], y)
   ctx.stroke()
 
+bigoh.width = 435
+bigoh.height = 635
 ctx, surface = bigoh.make_cairo_context()
 
 # Define colors and dimensions.
