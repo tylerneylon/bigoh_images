@@ -1,4 +1,10 @@
 #!/usr/bin/python
+#
+# quicksort_example2.py
+#
+# Draw the same graphs as quicksort_example1.py, but in a
+# horizontal layout.
+#
 
 import bigoh
 

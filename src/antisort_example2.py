@@ -2,7 +2,8 @@
 #
 # antisort_example2.py
 #
-# Draw graphs to illustrate the antisort function.
+# Draw graphs to show how the antisort function
+# works step-by-step.
 #
 
 import bigoh

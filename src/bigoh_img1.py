@@ -3,13 +3,12 @@
 # bigoh_img1.py
 #
 # Make images to visualize the running times of
-# quicksort vs mergesort.
+# quicksort vs mergesort on input sizes n=3 and n=4.
 #
 
 import bigoh
 import cairo
 
-# TODO Standardize use of camel-case vs underscores.
 
 bigoh.width = 700
 bigoh.height = 280

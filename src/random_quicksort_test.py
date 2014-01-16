@@ -2,6 +2,8 @@
 #
 # random_quicksort_test.py
 #
+# Test that randomized quicksort does indeed sort correctly, and
+# using running time that appears to be independent of the input ordering.
 # 
 
 import bigoh

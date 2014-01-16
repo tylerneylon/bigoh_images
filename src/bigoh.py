@@ -3,6 +3,7 @@
 # bigoh.py
 #
 # Sort-measuring and bar-graph-drawing functions.
+# Meant to be imported and not to be run directly.
 #
 
 import cairo

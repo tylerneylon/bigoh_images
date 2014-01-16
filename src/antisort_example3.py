@@ -11,6 +11,7 @@ import math
 
 # Major parameters.
 if False:
+  # These paremeters are intended for a 4-bar input.
   num_bars = 4
   graph_margin_x = 80  # May slightly increase.
   graph_margin_y = 60
@@ -18,6 +19,7 @@ if False:
   bigoh.width = 600
   bigoh.height = 400
 if True:
+  # These paremeters are intended for an 8-bar input.
   num_bars = 8
   graph_margin_x = 50  # May slightly increase.
   graph_margin_y = 30

@@ -1,4 +1,10 @@
 #!/usr/bin/python
+#
+# quicksort_example1.py
+#
+# Draw graphs to show the steps of a single
+# quicksort run on the input [4, 6, 2, 3, 5, 1].
+#
 
 import bigoh
 
